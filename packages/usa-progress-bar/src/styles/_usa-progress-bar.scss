@@ -1,0 +1,20 @@
+@use "uswds-core" as *;
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: color("base");
+  text-align: center;
+  white-space: nowrap;
+  background-color: color("base");
+}
+
+.progress-stacked > .progress {
+  overflow: visible;
+}
+
+.progress-stacked > .progress > .progress-bar {
+  width: 100%;
+}
